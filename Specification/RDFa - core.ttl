@@ -80,6 +80,8 @@ rdfa:Attribute
 
 ### Properties ###
 
+### Generic properties ###
+
 rdfa:key
     a owl:DatatypeProperty;
     rdfs:subPropertyOf dom:localName;
@@ -89,13 +91,14 @@ rdfa:key
     skos:prefLabel 'key property'@en;
     rdfs:isDefinedBy rdfa:.
 
+### RDFa attributes ###
+
 rdfa:property
     a owl:DatatypeProperty;
     rdf:type rdfa:Attribute;
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:string;
-    rdf:type rdfa:Attribute;
     rdfa:key 'property';
     skos:prefLabel 'the property attribute'@en;
     skos:definition "Specifies a property for an DOM element."@en;
@@ -107,7 +110,6 @@ rdfa:typeof
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:string;
-    rdf:type rdfa:Attribute;
     rdfa:key 'typeof';
     skos:prefLabel 'the typeof attribute'@en;
     skos:definition "Specifies a type for an HTML element (RDF class)."@en;
@@ -119,7 +121,6 @@ rdfa:vocab
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:anyURI;
-    rdf:type rdfa:Attribute;
     rdfa:key 'vocab';
     skos:prefLabel 'the vocab attribute'@en;
     skos:definition "Declares a default vocabulary for the HTML document."@en;
@@ -131,7 +132,6 @@ rdfa:prefix
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:string;
-    rdf:type rdfa:Attribute;
     rdfa:key 'prefix';
     skos:prefLabel 'the prefix attribute'@en;
     skos:definition "Declares a set of namespace prefixes for CURIEs used in the document."@en;
@@ -143,7 +143,6 @@ rdfa:about
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:anyURI;
-    rdf:type rdfa:Attribute;
     rdfa:key 'about';
     skos:prefLabel 'the about attribute'@en;
     skos:definition "Specifies the subject of the RDF triples in the context of the HTML element."@en;
@@ -155,7 +154,6 @@ rdfa:resource
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:anyURI;
-    rdf:type rdfa:Attribute;
     rdfa:key 'resource';
     skos:prefLabel 'the resource attribute'@en;
     skos:definition "Specifies the object resource of the RDF triples."@en;
@@ -167,7 +165,6 @@ rdfa:datatype
     dct:conformsTo section:AttributesAndSyntax;
     rdfs:domain dom:Element;
     rdfs:range xsd:anyURI;
-    rdf:type rdfa:Attribute;
     rdfa:key 'datatype';
     skos:prefLabel 'the datatype attribute'@en;
     skos:definition "Specifies the datatype of a literal in RDF."@en;
